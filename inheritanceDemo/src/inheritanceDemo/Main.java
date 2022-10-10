@@ -1,6 +1,5 @@
 package inheritanceDemo;
 
-//bir class sadece bir classı extend edebilir
 public class Main {
 
 	public static void main(String[] args) {

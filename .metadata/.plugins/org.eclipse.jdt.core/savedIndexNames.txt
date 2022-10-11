@@ -7,7 +7,6 @@ INDEX VERSION 1.131+C:\javademos\.metadata\.plugins\org.eclipse.jdt.core
 508671850.index
 923455450.index
 3627026387.index
-1353248687.index
 2959544807.index
 4163541083.index
 1865797976.index
@@ -24,7 +23,6 @@ INDEX VERSION 1.131+C:\javademos\.metadata\.plugins\org.eclipse.jdt.core
 435225591.index
 1220614122.index
 2888110583.index
-2511826987.index
 3750878710.index
 3216450761.index
 778069775.index

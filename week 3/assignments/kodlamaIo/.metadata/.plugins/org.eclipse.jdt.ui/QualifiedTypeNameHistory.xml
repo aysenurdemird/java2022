@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="kodlamaIoDemo.dataAccess.ProductDao"/>
+    <fullyQualifiedTypeName name="kodlamaIoDemo.entities.Product"/>
+    <fullyQualifiedTypeName name="kodlamaIoDemo.core.logging.FileLogger"/>
+    <fullyQualifiedTypeName name="kodlamaIoDemo.business.ProductManager"/>
+    <fullyQualifiedTypeName name="java.lang.System.Logger"/>
+    <fullyQualifiedTypeName name="kodlamaIoDemo.dataAccess.JdbcProductDao"/>
+    <fullyQualifiedTypeName name="kodlamaIoDemo.core.logging.DatabaseLogger"/>
+</qualifiedTypeNameHistroy>

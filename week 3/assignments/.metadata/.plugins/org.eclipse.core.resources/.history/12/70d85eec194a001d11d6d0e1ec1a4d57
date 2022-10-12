@@ -1,0 +1,6 @@
+package polymorphismDemo;
+
+public class CustomerManager {
+	CustomerManager customerManager = new CustomerManager(new FileLogger());
+	customerManager.add();
+}

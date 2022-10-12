@@ -1,0 +1,51 @@
+package kodlamaIoDemo.business;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import kodlamaIoDemo.dataAccess.ProductDao;
+import kodlamaIoDemo.entities.Product;
+import kodlamaIoDemo.core.logging.Logger;
+
+public class ProductManager {
+	private ProductDao productDao;
+	private Logger[] loggers;
+	
+	
+	public ProductManager(ProductDao productDao,Logger[] loggers) {
+		this.productDao = productDao;
+		this.loggers = loggers;
+	}
+	
+	 List<Product> categories = new ArrayList<>();
+	 List<Product> courses = new ArrayList<>();
+	
+	public void add(Product product) throws Exception { 
+		
+		if(product.getCoursePrice()<0) {
+			
+			throw new Exception("Kurs ücreti 0'dan küçük olamaz.");
+		}
+		
+		for(Product categoryName : categories) {
+		        	   
+		   if(categoryName.getCategoryName() == product.getCategoryName()) {
+			   throw new Exception("Aynı isimde kategori mevcutur.");
+			
+		   }
+		   for(Product courseName : courses) {
+				 if(courseName.getCourseName() == product.getCourseName()) {
+					   throw new Exception("Aynı isimde kurs  mevcuttur.");
+			 }
+			}
+		}
+		courses.add(product);
+		categories.add(product);
+		productDao.add(product);
+		
+		for(Logger logger : loggers) { //[db,mail}
+			logger.log(product.getCourseName());
+		}
+	
+
+}
